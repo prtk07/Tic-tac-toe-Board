@@ -25,7 +25,7 @@ element.appendChild(para);
 }
 
 
-function lund(e){  
+function ttt(e){  
     e.target.innerHTML = e.target.id[e.target.id.length-1];
 }
 

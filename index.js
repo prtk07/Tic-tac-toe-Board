@@ -1,32 +1,33 @@
 function myFunction() {
     document.getElementById("demo1").innerHTML = "Hello peoples!";
     document.getElementById("demo2").innerHTML = "How are you?";
-  }
- 
-function changeText(text)
-{
+}
+
+function changeText(text) {
     var display = document.getElementById('demo1');
     // display.innerHTML = "";
     display.innerHTML = text;
 }
-      
-function defaultText()
-{
+
+function defaultText() {
     var display = document.getElementById('demo1');
     // display.innerHTML = "";
     display.innerHTML = "shubham";
 }
-function newtag(){
-var para = document.createElement("p");
-var node = document.createTextNode("This is new.");
-para.appendChild(node);
-var element = document.getElementById("sk");
-element.appendChild(para);
+
+function newtag() {
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+    var element = document.getElementById("sk");
+    element.appendChild(para);
 }
 
+player1 = true;
 
-function ttt(e){  
-    e.target.innerHTML = e.target.id[e.target.id.length-1];
+function ttt(e) {
+    e.target.innerHTML = player1 ? "X" : "O";
+    player1 = !player1
 }
 
 
